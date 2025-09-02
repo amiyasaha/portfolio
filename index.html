@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <!--
+        Welcome to my website! I used Tailwind CSS to challenge myself in using a CSS library.
+        I want to preface that class names are long because they are utility classes
+        because Tailwind works by using class names that correspond with CSS styles. 
+        In my style.css file, you will find that the CSS styling matches the class names.
+    -->
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Amiya's Portfolio</title>
-        <link rel="stylesheet" href="tailwind.css">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body class="bg-[#011D0F]">
-        <header class="h-25  bg-[#F4F2F225] rounded-full mx-4 my-4 flex justify-center drop-shadow-xl">
-            <h1 class="text-3xl text-white font-bold">AMIYA</h1>
+    <body class="bg-image bg-cover h-screen w-screen">
+        <header class="h-18 bg-alphagray rounded-full m-4 flex flex-row justify-between shadow-xl
+        hover-bg-alphablack hover-m-up transition duration-300 ease-in-out">
+            <h1 class="text-3xl p-4 text-white"><a href="index.html">amiya saha</a></h1>
+            <img src="images/header.png">
+            <h1 class="text-3xl text-white underline p-4 hover-text-green-500"><a href="contact.html">contact</a></h1>
         </header>
+        <main class="grid grid-cols-2 gap-4 m-20 ">
+            <div class="flex flex-col items-center gap-5">
+                <img class="rounded-full w-50 lg-w-75 border-green-300 border-2 shadow-xl" src="images/amiya.jpg" alt="a picture of amiya looking frustrated, unclear why">
+                <p class="bg-alphagray w-30 sm-w-75 text-white rounded-md p-2 shadow-xl">
+                    Hi, I'm Amiya Saha! I'm currently a freshman studying Computer Science at the
+                    University of Washington. I love learning new things through working on
+                    ambitious projects. I'm interested in all sort of things related to and
+                    beyond technology.
+                    Feel free to <a class="underline decoration-green-500 hover-text-green-500" href="contact.html">
+                    contact</a> me!
+                </p>
+            </div>
+            <aside class="flex flex-col gap-4">
+                <h1 class="bg-alphagray rounded-full text-white text-center shadow-xl">
+                <span>opinions!</span>
+                </h1>
+                <h2 class="bg-alphagray text-2xl rounded-full text-white p-2 shadow-xl">ranking all
+                    <a href="https://en.wikipedia.org/wiki/Calpis" class="underline decoration-green-500
+                    hover-text-green-500">calpico</a> flavors
+                </h2>
+                <ol class="bg-alphagray rounded-md text-white px-6 list-decimal shadow-xl">
+                    <li>Mango</li>
+                    <li>Lychee</li>
+                    <li>Original</li>
+                    <li>Melon</li>
+                    <li>Strawberry</li>
+                    <li>White Peach</li>
+                </ol>
+                <h2 class="bg-alphagray rounded-full text-white text-2xl p-2">
+                    top 10 roblox games
+                </h2>
+            </aside>
+        </main>
+        <footer class="relative bottom-0 justify-center text-white pt-20 flex
+        flex-row gap-4 items-baseline">
+            <p>made by amiya, 2025.</p>
+            <p class="text-xs">open <a class="underline decoration-green-500" href="https://github.com/amiyasaha/portfolio">source code</a> for citations!</p>
+            <!--image sourced from wikimedia commons-->
+            <img class="w-4" src="https://upload.wikimedia.org/wikipedia/commons/1/17/Washington_Huskies_logo.svg"
+            alt="UW 'W' Logo!">
+        </footer>
     </body>
 </html>

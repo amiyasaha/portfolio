@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Welcome to my website contact page! 
+        I used Tailwind CSS to challenge myself in using a CSS library.
+        I want to preface that class names are long because they are utility classes
+        since Tailwind works by using class names that correspond with CSS styles. 
+        In my style.css file, you will find that the CSS styling matches the class names.
+
+        I have also used ids in this file to give the buttons the same styling.
+    -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amiya's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-image bg-cover h-screen w-screen">
+        <header class="h-18 bg-alphagray rounded-full m-4 flex flex-row justify-between shadow-xl hover-bg-alphablack hover-m-up transition duration-300 ease-in-out">
+            <h1 class="text-3xl p-4 text-white"><a href="index.html">amiya saha</a></h1>
+            <!--image created by me--> 
+            <img src="images/header.png">
+            <h1 class="text-3xl text-white underline p-4 hover-text-green-500"><a href="contact.html">contact</a></h1>
+        </header>
+        <main class="grid grid-cols-5 gap-4 m-20 text-center text-white">
+            <a class="bg-alphagray shadow-xl hover-bg-alphablack" id="contact-buttons" href="https://instagram.com/amiy.a._">instagram</a>
+            <a class="bg-alphagray shadow-xl hover-bg-alphablack" id="contact-buttons" href="tel:+1-509-361-3866">cell</a>
+            <a class="bg-alphagray shadow-xl hover-bg-alphablack" id="contact-buttons" href="https://www.linkedin.com/in/amiya-saha-6bb243338/">linkedin</a>
+            <a class="bg-alphagray shadow-xl hover-bg-alphablack" id="contact-buttons" href="https://github.com/amiyasaha">github</a>
+            <a class= "bg-alphagray shadow-xl hover-bg-alphablack" id="contact-buttons" href="mailto:ass7@cs.washington.edu">email</a>
+        </main>
+        <footer class="relative bottom-0 justify-center text-white pt-20 flex flex-row gap-4 items-baseline">
+            <p>made by amiya, 2025. </p>
+            <p class="text-xs">open the <a class="underline decoration-green-500" href="https://github.com/amiyasaha/portfolio">source code</a> for citations!</p>
+            <!--image sourced from wikimedia commons-->
+            <img class="w-4" src="https://upload.wikimedia.org/wikipedia/commons/1/17/Washington_Huskies_logo.svg" alt="UW 'W' Logo!">
+        </footer>
+        
+    </body>
+</html>
